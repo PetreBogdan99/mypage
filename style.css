@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Monoton&display=swap");
+* {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+/* top menu styling */
+#background {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-bottom: rgb(77, 29, 29) 1px solid;
+}
+#top-menu {
+  text-align: center;
+}
+#top-menu li {
+  display: inline-block;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: 1000;
+  font-family: "Fira Sans", sans-serif;
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  letter-spacing: 1px;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(255, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 20px;
+  }
+}
+
+/* home styling */
+
+#home-section {
+  color: white;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 50px;
+  font-size: 16px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+}
+
+#top-menu a {
+  transition: 0.3 ease;
+}
+
+#top-menu a:hover {
+  transform: scale(1.1);
+}
+
+#down-button {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.2s ease-in;
+  position: relative;
+}
+
+#down-button:active {
+  transform: scale(1.5);
+}
+
+h1 {
+  display: block;
+  color: white;
+}
+h3 {
+  display: block;
+  color: white;
+  color: red;
+}
+
+h2 {
+  display: block;
+  color: white;
+}
